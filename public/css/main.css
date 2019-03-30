@@ -1,0 +1,118 @@
+/* ================== */
+/* ==== UTILITIES === */
+/* ================== */
+
+.margin-0{
+    margin: 0;
+}
+
+.margin-15{
+    margin: 15px;
+}
+
+.margin-30{
+    margin: 30px;
+}
+
+.margin-top-60{
+    margin-top: 60px;
+}
+
+.margin-bottom-15{
+    margin-bottom: 15px;
+}
+
+.padding-0{
+    padding: 0;
+}
+
+.padding-15{
+    padding: 15px;
+}
+
+.padding-30{
+    padding: 30px;
+}
+
+.overflow-overlay{
+    overflow: overlay;
+}
+
+/* ================== */
+/* ==== UTILITIES === */
+/* ================== */
+
+/* ================== */
+/* ==== PROGRESS ==== */
+/* ================== */
+
+.progress-navigation{
+    counter-reset: step;
+}
+
+.progress-navigation li{
+    list-style-type: none;
+    float: left;
+    position: relative;
+    text-align: center;
+}
+
+.progress-navigation li:before{
+    content: counter(step);
+    counter-increment: step;
+    height: 30px;
+    width: 30px;
+    line-height: 25px;
+    border: 1px solid #ddd;
+    display: block;
+    text-align: center;
+    margin: 0 auto 10px auto;
+    border-radius: 50%;
+    position: relative;
+    background-color: white;
+    z-index: 1;
+}
+
+.progress-navigation li:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+    top: 15px;
+    left: -50%;
+}
+
+.progress-navigation li:first-child:after{
+    content: none;
+}
+
+.progress-navigation li.active{
+    color: green;
+    font-weight: bold;
+}
+
+.progress-navigation li.active:before{
+    border-color: green;
+    color: green;
+}
+
+.progress-navigation li.active + li:after{
+    background-color: green;
+}
+
+/* ================== */
+/* ==== PROGRESS ==== */
+/* ================== */
+
+/* ================== */
+/* ===== FORM's ===== */
+/* ================== */
+
+.container-list{
+    max-height: 300px;
+}
+
+/* ================== */
+/* ===== FORM's ===== */
+/* ================== */
